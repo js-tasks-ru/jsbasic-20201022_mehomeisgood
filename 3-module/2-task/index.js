@@ -14,4 +14,4 @@ let filtered = filterRange(arr, 1, 4);
 
 alert( filtered ); 
 
-alert( arr ); 
+alert( arr );
