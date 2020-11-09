@@ -8,10 +8,6 @@ function getMinMax(str) {
   let itemsDividedByComma = stringWithoutSpaces.split(',');
   let numbersOnly = itemsDividedByComma
     .filter((item) => item !== '' && isFinite(item));
-<<<<<<< HEAD
-=======
-
->>>>>>> fdb9de3a9a2a7a49210f937ffe1d0f6030b18459
   let max = Math.max(...numbersOnly);
   let min = Math.min(...numbersOnly);
 
