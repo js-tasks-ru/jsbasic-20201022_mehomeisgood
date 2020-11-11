@@ -14,8 +14,6 @@ let calculator = {
 };
 
 calculator.read(3, 5);
-alert(calculator.sum() );
-alert(calculator.mul() );
 
 
 // НЕ УДАЛЯТЬ СТРОКУ, НУЖНА ДЛЯ ПРОВЕРКИ
