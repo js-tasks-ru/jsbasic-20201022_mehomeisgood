@@ -1,20 +1,17 @@
 let calculator = {
+  read(a,b) {
+    return (
+      this.num = a,
+      this.num2 = b
+    )
+  },
   sum() {
-    return this.a + this.b;
+    return this.num + this.num2
   },
-
-  mul() {
-    return this.a * this.b;
-  },
-
-  read(a, b) {
-    this.a = a;
-    this.b = b;
-  } 
+  mul: function () {
+    return this.num * this.num2
+  }
 };
-
-calculator.read(3, 5);
-
 
 // НЕ УДАЛЯТЬ СТРОКУ, НУЖНА ДЛЯ ПРОВЕРКИ
 window.calculator = calculator; // делает ваш калькулятор доступным глобально
