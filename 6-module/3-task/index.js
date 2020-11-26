@@ -4,10 +4,6 @@ export default class Carousel {
 
   constructor(slides) {
     this.slides = slides;
-<<<<<<< HEAD
-=======
-
->>>>>>> feb2eaa547ce3d6895439a4e31cfe2ecd932c651
     this.currentSlideNumber = 0;
     this.render();
     this.addEventListeners();
@@ -67,7 +63,6 @@ export default class Carousel {
         this.prev();
       }
     };
-<<<<<<< HEAD
   }
 
   sub(ref) {
@@ -99,8 +94,6 @@ export default class Carousel {
     } else {
       this.sub('arrow_left').style.display = '';
     }
-=======
->>>>>>> feb2eaa547ce3d6895439a4e31cfe2ecd932c651
   }
 
   sub(ref) {
