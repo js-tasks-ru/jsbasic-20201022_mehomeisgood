@@ -1,8 +1,13 @@
 import createElement from '../../assets/lib/create-element.js';
 
 export default class Carousel {
+
   constructor(slides) {
     this.slides = slides;
+<<<<<<< HEAD
+=======
+
+>>>>>>> feb2eaa547ce3d6895439a4e31cfe2ecd932c651
     this.currentSlideNumber = 0;
     this.render();
     this.addEventListeners();
@@ -62,6 +67,40 @@ export default class Carousel {
         this.prev();
       }
     };
+<<<<<<< HEAD
+  }
+
+  sub(ref) {
+    return this.elem.querySelector(`.carousel__${ref}`);
+  }
+
+  next() {
+    this.currentSlideNumber++;
+    this.update();
+  }
+
+  prev() {
+    this.currentSlideNumber--;
+    this.update();
+  }
+
+  update() {
+    let offset = -this.elem.offsetWidth * this.currentSlideNumber;
+    this.sub('inner').style.transform = `translateX(${offset}px)`;
+
+    if (this.currentSlideNumber == this.slides.length - 1) {
+      this.sub('arrow_right').style.display = 'none';
+    } else {
+      this.sub('arrow_right').style.display = '';
+    }
+
+    if (this.currentSlideNumber == 0) {
+      this.sub('arrow_left').style.display = 'none';
+    } else {
+      this.sub('arrow_left').style.display = '';
+    }
+=======
+>>>>>>> feb2eaa547ce3d6895439a4e31cfe2ecd932c651
   }
 
   sub(ref) {
@@ -94,4 +133,5 @@ export default class Carousel {
       this.sub('arrow_left').style.display = '';
     }
   }
+
 }
