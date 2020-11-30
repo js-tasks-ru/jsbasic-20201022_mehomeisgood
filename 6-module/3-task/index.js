@@ -4,7 +4,6 @@ export default class Carousel {
 
   constructor(slides) {
     this.slides = slides;
-
     this.currentSlideNumber = 0;
     this.render();
     this.addEventListeners();
@@ -96,5 +95,36 @@ export default class Carousel {
       this.sub('arrow_left').style.display = '';
     }
   }
+
+  sub(ref) {
+    return this.elem.querySelector(`.carousel__${ref}`);
+  }
+
+  next() {
+    this.currentSlideNumber++;
+    this.update();
+  }
+
+  prev() {
+    this.currentSlideNumber--;
+    this.update();
+  }
+
+  update() {
+    let offset = -this.elem.offsetWidth * this.currentSlideNumber;
+    this.sub('inner').style.transform = `translateX(${offset}px)`;
+
+    if (this.currentSlideNumber == this.slides.length - 1) {
+      this.sub('arrow_right').style.display = 'none';
+    } else {
+      this.sub('arrow_right').style.display = '';
+    }
+
+    if (this.currentSlideNumber == 0) {
+      this.sub('arrow_left').style.display = 'none';
+    } else {
+      this.sub('arrow_left').style.display = '';
+        }
+   }
 
 }

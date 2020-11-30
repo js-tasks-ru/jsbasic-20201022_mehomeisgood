@@ -3,5 +3,5 @@ function hideSelf() {
 
   button.onclick = function() {
     this.hidden = true;
-  };
-}
+    };
+  }
