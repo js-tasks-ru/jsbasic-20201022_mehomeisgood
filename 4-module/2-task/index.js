@@ -10,7 +10,7 @@ function makeDiagonalRed(table) {
   }
 }
 
-  let rowsLength = table.rows.length;
+let rowsLength = table.rows.length;
   let rows = table.rows;
 
   for (let i = 0; i < rowsLength; i++) {

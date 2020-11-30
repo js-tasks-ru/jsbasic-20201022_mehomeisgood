@@ -78,6 +78,6 @@ export default class UserTable {
       this.elem2.append(this.rows[i].render());
     }
     this.elem.append(this.elem2);
-  }
+      }
 }
 

@@ -3,7 +3,7 @@
  * @returns {string[]}  объект
  */
 
- function namify(users) {
+ function namify(users)     {
   let names = users.map(item => item.name);
-  return names;
- }
+    return names;
+    }

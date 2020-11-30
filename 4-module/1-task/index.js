@@ -8,5 +8,5 @@ function makeFriendsList(friends) {
      for (let name of friends) {
        list.innerHTML += `<li>${name.firstName} ${name.lastName}</li>`
      }
-     return list
+    return list
    }

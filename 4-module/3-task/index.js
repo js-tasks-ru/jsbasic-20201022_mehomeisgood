@@ -33,13 +33,13 @@ function highlight(table) {
         },
     };
 
-for (const tr of table.rows) {
-    Array.from(tr.cells).forEach((td, index) => {
-        const fn = actions[index];
-
-        if (typeof fn === 'function') {
-            fn(tr, td);
-            }
-        });
+    for (const tr of table.rows) {
+        Array.from(tr.cells).forEach((td, index) => {
+            const fn = actions[index];
+    
+            if (typeof fn === 'function') {
+                fn(tr, td);
+                }
+            });
+        }
     }
-}

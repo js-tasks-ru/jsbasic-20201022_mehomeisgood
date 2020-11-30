@@ -26,5 +26,5 @@ function initCarousel() {
   leftBtn.addEventListener('click', () => {
     countClick = --countClick
     move(0, leftBtn)
-  })
+     })
 }

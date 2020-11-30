@@ -28,6 +28,6 @@ export default class ProductCard {
         bubbles: true
       })
       this.elem.dispatchEvent(this.event)
-    })
-  }
+     })
+    }
 }

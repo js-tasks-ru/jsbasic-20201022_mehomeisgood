@@ -124,7 +124,7 @@ export default class Carousel {
       this.sub('arrow_left').style.display = 'none';
     } else {
       this.sub('arrow_left').style.display = '';
-    }
-  }
+        }
+   }
 
 }
